@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7090A266D4C9BC9D83447098 /* libPods-MindValleyTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5597C9A8EECF5DE72F028B07 /* libPods-MindValleyTestUITests.a */; };
+		79D2AC75851F47E98F78FC76 /* libPods-MindValleyTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317918832BAB25C2CB6D0D31 /* libPods-MindValleyTestTests.a */; };
+		95241DE0491D557C5FF78CE3 /* libPods-MindValleyTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4E7AAEBDF39A1947420F15 /* libPods-MindValleyTest.a */; };
+		CF3EE7061F26653E002A910E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3EE7051F26653E002A910E /* main.m */; };
+		CF3EE7091F26653E002A910E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3EE7081F26653E002A910E /* AppDelegate.m */; };
+		CF3EE70C1F26653E002A910E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3EE70B1F26653E002A910E /* ViewController.m */; };
+		CF3EE70F1F26653E002A910E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3EE70D1F26653E002A910E /* Main.storyboard */; };
+		CF3EE7111F26653E002A910E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3EE7101F26653E002A910E /* Assets.xcassets */; };
+		CF3EE7141F26653E002A910E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3EE7121F26653E002A910E /* LaunchScreen.storyboard */; };
+		CF3EE71F1F26653E002A910E /* MindValleyTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3EE71E1F26653E002A910E /* MindValleyTestTests.m */; };
+		CF3EE72A1F26653E002A910E /* MindValleyTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3EE7291F26653E002A910E /* MindValleyTestUITests.m */; };
+		CF3EE73F1F26703A002A910E /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3EE73E1F26703A002A910E /* Common.m */; };
+		CF3EE7441F267288002A910E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3EE7431F267288002A910E /* Reachability.m */; };
+		CF45275E1F27DE2900E2A898 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CF45275D1F27DE2900E2A898 /* Podfile */; };
+		CF800C161F28A537002121CB /* libZIAsyncFileFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF800C131F28A3BC002121CB /* libZIAsyncFileFetcher.a */; };
+		CFB3B1CE1F27228A00D30170 /* CHTCollectionViewWaterfallLayout in Resources */ = {isa = PBXBuildFile; fileRef = CFB3B1CD1F27228A00D30170 /* CHTCollectionViewWaterfallLayout */; };
+		CFB3B1D31F27271C00D30170 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3B1D21F27271C00D30170 /* ImageCollectionViewCell.m */; };
+		CFB3B1D61F272DF800D30170 /* ProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3B1D51F272DF800D30170 /* ProfileInfo.m */; };
+		CFB3B1D91F272FC000D30170 /* ProfileFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3B1D81F272FC000D30170 /* ProfileFetcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF3EE71B1F26653E002A910E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF3EE6F91F26653E002A910E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF3EE7001F26653E002A910E;
+			remoteInfo = MindValleyTest;
+		};
+		CF3EE7261F26653E002A910E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF3EE6F91F26653E002A910E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF3EE7001F26653E002A910E;
+			remoteInfo = MindValleyTest;
+		};
+		CF800C121F28A3BC002121CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF800C0E1F28A3BC002121CB /* ZIAsyncFileFetcher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF9541241F27FEAD0006064D;
+			remoteInfo = ZIAsyncFileFetcher;
+		};
+		CF800C141F28A4FB002121CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF800C0E1F28A3BC002121CB /* ZIAsyncFileFetcher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CF9541231F27FEAD0006064D;
+			remoteInfo = ZIAsyncFileFetcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		183FFD5C40C84E8DD3ACB8F2 /* Pods-MindValleyTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindValleyTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MindValleyTestTests/Pods-MindValleyTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B4E7AAEBDF39A1947420F15 /* libPods-MindValleyTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindValleyTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		317918832BAB25C2CB6D0D31 /* libPods-MindValleyTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindValleyTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5597C9A8EECF5DE72F028B07 /* libPods-MindValleyTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindValleyTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC69361ED7A8A7B9C613DAC /* Pods-MindValleyTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindValleyTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MindValleyTestTests/Pods-MindValleyTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0C6AA293E4A4815596396D /* Pods-MindValleyTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindValleyTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MindValleyTestUITests/Pods-MindValleyTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3F32867037A8B2BC1D96919 /* Pods-MindValleyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindValleyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MindValleyTest/Pods-MindValleyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A74BFB7D82FAD567207E6A62 /* Pods-MindValleyTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindValleyTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MindValleyTestUITests/Pods-MindValleyTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF3EE7011F26653E002A910E /* MindValleyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindValleyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3EE7051F26653E002A910E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF3EE7071F26653E002A910E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF3EE7081F26653E002A910E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF3EE70A1F26653E002A910E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF3EE70B1F26653E002A910E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF3EE70E1F26653E002A910E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF3EE7101F26653E002A910E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF3EE7131F26653E002A910E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF3EE7151F26653E002A910E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3EE71A1F26653E002A910E /* MindValleyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindValleyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3EE71E1F26653E002A910E /* MindValleyTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindValleyTestTests.m; sourceTree = "<group>"; };
+		CF3EE7201F26653E002A910E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3EE7251F26653E002A910E /* MindValleyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindValleyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3EE7291F26653E002A910E /* MindValleyTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindValleyTestUITests.m; sourceTree = "<group>"; };
+		CF3EE72B1F26653E002A910E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3EE7391F266E56002A910E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CF3EE73E1F26703A002A910E /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		CF3EE7401F26707B002A910E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		CF3EE7421F267288002A910E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CF3EE7431F267288002A910E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CF45275D1F27DE2900E2A898 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CF800C0E1F28A3BC002121CB /* ZIAsyncFileFetcher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZIAsyncFileFetcher.xcodeproj; path = ../../ZIAsyncFileFetcher/ZIAsyncFileFetcher.xcodeproj; sourceTree = "<group>"; };
+		CFB3B1CD1F27228A00D30170 /* CHTCollectionViewWaterfallLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CHTCollectionViewWaterfallLayout; sourceTree = "<group>"; };
+		CFB3B1D11F27271C00D30170 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		CFB3B1D21F27271C00D30170 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		CFB3B1D41F272DF800D30170 /* ProfileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileInfo.h; sourceTree = "<group>"; };
+		CFB3B1D51F272DF800D30170 /* ProfileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileInfo.m; sourceTree = "<group>"; };
+		CFB3B1D71F272FC000D30170 /* ProfileFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileFetcher.h; sourceTree = "<group>"; };
+		CFB3B1D81F272FC000D30170 /* ProfileFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileFetcher.m; sourceTree = "<group>"; };
+		DE5946425A84B2412CAB52E4 /* Pods-MindValleyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindValleyTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MindValleyTest/Pods-MindValleyTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF3EE6FE1F26653E002A910E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF800C161F28A537002121CB /* libZIAsyncFileFetcher.a in Frameworks */,
+				95241DE0491D557C5FF78CE3 /* libPods-MindValleyTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3EE7171F26653E002A910E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D2AC75851F47E98F78FC76 /* libPods-MindValleyTestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3EE7221F26653E002A910E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7090A266D4C9BC9D83447098 /* libPods-MindValleyTestUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49F792B2AAB7A8030ED8DEA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3F32867037A8B2BC1D96919 /* Pods-MindValleyTest.debug.xcconfig */,
+				DE5946425A84B2412CAB52E4 /* Pods-MindValleyTest.release.xcconfig */,
+				5FC69361ED7A8A7B9C613DAC /* Pods-MindValleyTestTests.debug.xcconfig */,
+				183FFD5C40C84E8DD3ACB8F2 /* Pods-MindValleyTestTests.release.xcconfig */,
+				8A0C6AA293E4A4815596396D /* Pods-MindValleyTestUITests.debug.xcconfig */,
+				A74BFB7D82FAD567207E6A62 /* Pods-MindValleyTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5ED9AA9F4E98306D24204E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B4E7AAEBDF39A1947420F15 /* libPods-MindValleyTest.a */,
+				317918832BAB25C2CB6D0D31 /* libPods-MindValleyTestTests.a */,
+				5597C9A8EECF5DE72F028B07 /* libPods-MindValleyTestUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF3EE6F81F26653E002A910E = {
+			isa = PBXGroup;
+			children = (
+				CF45275D1F27DE2900E2A898 /* Podfile */,
+				CF3EE7031F26653E002A910E /* MindValleyTest */,
+				CF3EE71D1F26653E002A910E /* MindValleyTestTests */,
+				CF3EE7281F26653E002A910E /* MindValleyTestUITests */,
+				CF3EE7021F26653E002A910E /* Products */,
+				49F792B2AAB7A8030ED8DEA5 /* Pods */,
+				5ED9AA9F4E98306D24204E84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF3EE7021F26653E002A910E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF3EE7011F26653E002A910E /* MindValleyTest.app */,
+				CF3EE71A1F26653E002A910E /* MindValleyTestTests.xctest */,
+				CF3EE7251F26653E002A910E /* MindValleyTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF3EE7031F26653E002A910E /* MindValleyTest */ = {
+			isa = PBXGroup;
+			children = (
+				CF800C0E1F28A3BC002121CB /* ZIAsyncFileFetcher.xcodeproj */,
+				CFB3B1CD1F27228A00D30170 /* CHTCollectionViewWaterfallLayout */,
+				CF3EE7411F26726B002A910E /* Reachability */,
+				CF3EE7371F266DC9002A910E /* Core Class */,
+				CFB3B1CF1F27264C00D30170 /* View Controller */,
+				CFB3B1D01F2726AA00D30170 /* CollectionView Cell */,
+				CF3EE70D1F26653E002A910E /* Main.storyboard */,
+				CF3EE7101F26653E002A910E /* Assets.xcassets */,
+				CF3EE7121F26653E002A910E /* LaunchScreen.storyboard */,
+				CF3EE7151F26653E002A910E /* Info.plist */,
+				CF3EE7041F26653E002A910E /* Supporting Files */,
+			);
+			path = MindValleyTest;
+			sourceTree = "<group>";
+		};
+		CF3EE7041F26653E002A910E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF3EE7051F26653E002A910E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF3EE71D1F26653E002A910E /* MindValleyTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF3EE71E1F26653E002A910E /* MindValleyTestTests.m */,
+				CF3EE7201F26653E002A910E /* Info.plist */,
+			);
+			path = MindValleyTestTests;
+			sourceTree = "<group>";
+		};
+		CF3EE7281F26653E002A910E /* MindValleyTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF3EE7291F26653E002A910E /* MindValleyTestUITests.m */,
+				CF3EE72B1F26653E002A910E /* Info.plist */,
+			);
+			path = MindValleyTestUITests;
+			sourceTree = "<group>";
+		};
+		CF3EE7371F266DC9002A910E /* Core Class */ = {
+			isa = PBXGroup;
+			children = (
+				CF3EE7071F26653E002A910E /* AppDelegate.h */,
+				CF3EE7081F26653E002A910E /* AppDelegate.m */,
+				CF3EE7391F266E56002A910E /* Constants.h */,
+				CF3EE7401F26707B002A910E /* Common.h */,
+				CF3EE73E1F26703A002A910E /* Common.m */,
+				CFB3B1D41F272DF800D30170 /* ProfileInfo.h */,
+				CFB3B1D51F272DF800D30170 /* ProfileInfo.m */,
+				CFB3B1D71F272FC000D30170 /* ProfileFetcher.h */,
+				CFB3B1D81F272FC000D30170 /* ProfileFetcher.m */,
+			);
+			name = "Core Class";
+			sourceTree = "<group>";
+		};
+		CF3EE7411F26726B002A910E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CF3EE7421F267288002A910E /* Reachability.h */,
+				CF3EE7431F267288002A910E /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		CF800C0F1F28A3BC002121CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF800C131F28A3BC002121CB /* libZIAsyncFileFetcher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFB3B1CF1F27264C00D30170 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF3EE70A1F26653E002A910E /* ViewController.h */,
+				CF3EE70B1F26653E002A910E /* ViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		CFB3B1D01F2726AA00D30170 /* CollectionView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CFB3B1D11F27271C00D30170 /* ImageCollectionViewCell.h */,
+				CFB3B1D21F27271C00D30170 /* ImageCollectionViewCell.m */,
+			);
+			name = "CollectionView Cell";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF3EE7001F26653E002A910E /* MindValleyTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3EE72E1F26653E002A910E /* Build configuration list for PBXNativeTarget "MindValleyTest" */;
+			buildPhases = (
+				07F4F57B9F46C13EDB39A110 /* [CP] Check Pods Manifest.lock */,
+				CF3EE6FD1F26653E002A910E /* Sources */,
+				CF3EE6FE1F26653E002A910E /* Frameworks */,
+				CF3EE6FF1F26653E002A910E /* Resources */,
+				142D621D41E39A981A11321B /* [CP] Embed Pods Frameworks */,
+				D61C22C0E9F462BAABD4A788 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF800C151F28A4FB002121CB /* PBXTargetDependency */,
+			);
+			name = MindValleyTest;
+			productName = MindValleyTest;
+			productReference = CF3EE7011F26653E002A910E /* MindValleyTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF3EE7191F26653E002A910E /* MindValleyTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3EE7311F26653E002A910E /* Build configuration list for PBXNativeTarget "MindValleyTestTests" */;
+			buildPhases = (
+				BA17AD9B6902620D551A1CAE /* [CP] Check Pods Manifest.lock */,
+				CF3EE7161F26653E002A910E /* Sources */,
+				CF3EE7171F26653E002A910E /* Frameworks */,
+				CF3EE7181F26653E002A910E /* Resources */,
+				9B673AD26388F325ED310AA3 /* [CP] Embed Pods Frameworks */,
+				7DF8DAB074DEFA2777ED57DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF3EE71C1F26653E002A910E /* PBXTargetDependency */,
+			);
+			name = MindValleyTestTests;
+			productName = MindValleyTestTests;
+			productReference = CF3EE71A1F26653E002A910E /* MindValleyTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF3EE7241F26653E002A910E /* MindValleyTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3EE7341F26653E002A910E /* Build configuration list for PBXNativeTarget "MindValleyTestUITests" */;
+			buildPhases = (
+				D3BCB9E377817C41CC07D9B2 /* [CP] Check Pods Manifest.lock */,
+				CF3EE7211F26653E002A910E /* Sources */,
+				CF3EE7221F26653E002A910E /* Frameworks */,
+				CF3EE7231F26653E002A910E /* Resources */,
+				63C4010327774C1BD562C841 /* [CP] Embed Pods Frameworks */,
+				AFAC4A0C2151EB004399D095 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF3EE7271F26653E002A910E /* PBXTargetDependency */,
+			);
+			name = MindValleyTestUITests;
+			productName = MindValleyTestUITests;
+			productReference = CF3EE7251F26653E002A910E /* MindValleyTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF3EE6F91F26653E002A910E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ZI";
+				TargetAttributes = {
+					CF3EE7001F26653E002A910E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					CF3EE7191F26653E002A910E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF3EE7001F26653E002A910E;
+					};
+					CF3EE7241F26653E002A910E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF3EE7001F26653E002A910E;
+					};
+				};
+			};
+			buildConfigurationList = CF3EE6FC1F26653E002A910E /* Build configuration list for PBXProject "MindValleyTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF3EE6F81F26653E002A910E;
+			productRefGroup = CF3EE7021F26653E002A910E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CF800C0F1F28A3BC002121CB /* Products */;
+					ProjectRef = CF800C0E1F28A3BC002121CB /* ZIAsyncFileFetcher.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CF3EE7001F26653E002A910E /* MindValleyTest */,
+				CF3EE7191F26653E002A910E /* MindValleyTestTests */,
+				CF3EE7241F26653E002A910E /* MindValleyTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CF800C131F28A3BC002121CB /* libZIAsyncFileFetcher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZIAsyncFileFetcher.a;
+			remoteRef = CF800C121F28A3BC002121CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF3EE6FF1F26653E002A910E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF45275E1F27DE2900E2A898 /* Podfile in Resources */,
+				CFB3B1CE1F27228A00D30170 /* CHTCollectionViewWaterfallLayout in Resources */,
+				CF3EE7141F26653E002A910E /* LaunchScreen.storyboard in Resources */,
+				CF3EE7111F26653E002A910E /* Assets.xcassets in Resources */,
+				CF3EE70F1F26653E002A910E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3EE7181F26653E002A910E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3EE7231F26653E002A910E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07F4F57B9F46C13EDB39A110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		142D621D41E39A981A11321B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MindValleyTest/Pods-MindValleyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63C4010327774C1BD562C841 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MindValleyTestUITests/Pods-MindValleyTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF8DAB074DEFA2777ED57DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MindValleyTestTests/Pods-MindValleyTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B673AD26388F325ED310AA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MindValleyTestTests/Pods-MindValleyTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFAC4A0C2151EB004399D095 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MindValleyTestUITests/Pods-MindValleyTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA17AD9B6902620D551A1CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3BCB9E377817C41CC07D9B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D61C22C0E9F462BAABD4A788 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MindValleyTest/Pods-MindValleyTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF3EE6FD1F26653E002A910E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3EE73F1F26703A002A910E /* Common.m in Sources */,
+				CFB3B1D61F272DF800D30170 /* ProfileInfo.m in Sources */,
+				CFB3B1D31F27271C00D30170 /* ImageCollectionViewCell.m in Sources */,
+				CF3EE70C1F26653E002A910E /* ViewController.m in Sources */,
+				CF3EE7091F26653E002A910E /* AppDelegate.m in Sources */,
+				CFB3B1D91F272FC000D30170 /* ProfileFetcher.m in Sources */,
+				CF3EE7061F26653E002A910E /* main.m in Sources */,
+				CF3EE7441F267288002A910E /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3EE7161F26653E002A910E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3EE71F1F26653E002A910E /* MindValleyTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3EE7211F26653E002A910E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3EE72A1F26653E002A910E /* MindValleyTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF3EE71C1F26653E002A910E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF3EE7001F26653E002A910E /* MindValleyTest */;
+			targetProxy = CF3EE71B1F26653E002A910E /* PBXContainerItemProxy */;
+		};
+		CF3EE7271F26653E002A910E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF3EE7001F26653E002A910E /* MindValleyTest */;
+			targetProxy = CF3EE7261F26653E002A910E /* PBXContainerItemProxy */;
+		};
+		CF800C151F28A4FB002121CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZIAsyncFileFetcher;
+			targetProxy = CF800C141F28A4FB002121CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF3EE70D1F26653E002A910E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF3EE70E1F26653E002A910E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF3EE7121F26653E002A910E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF3EE7131F26653E002A910E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF3EE72C1F26653E002A910E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF3EE72D1F26653E002A910E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF3EE72F1F26653E002A910E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3F32867037A8B2BC1D96919 /* Pods-MindValleyTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindValleyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sealritedoor.test.MindValleyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF3EE7301F26653E002A910E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE5946425A84B2412CAB52E4 /* Pods-MindValleyTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindValleyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sealritedoor.test.MindValleyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF3EE7321F26653E002A910E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FC69361ED7A8A7B9C613DAC /* Pods-MindValleyTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MindValleyTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sealritedoor.test.MindValleyTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindValleyTest.app/MindValleyTest";
+			};
+			name = Debug;
+		};
+		CF3EE7331F26653E002A910E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183FFD5C40C84E8DD3ACB8F2 /* Pods-MindValleyTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MindValleyTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sealritedoor.test.MindValleyTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindValleyTest.app/MindValleyTest";
+			};
+			name = Release;
+		};
+		CF3EE7351F26653E002A910E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0C6AA293E4A4815596396D /* Pods-MindValleyTestUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MindValleyTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sealritedoor.test.MindValleyTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MindValleyTest;
+			};
+			name = Debug;
+		};
+		CF3EE7361F26653E002A910E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74BFB7D82FAD567207E6A62 /* Pods-MindValleyTestUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MindValleyTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sealritedoor.test.MindValleyTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MindValleyTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF3EE6FC1F26653E002A910E /* Build configuration list for PBXProject "MindValleyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3EE72C1F26653E002A910E /* Debug */,
+				CF3EE72D1F26653E002A910E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3EE72E1F26653E002A910E /* Build configuration list for PBXNativeTarget "MindValleyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3EE72F1F26653E002A910E /* Debug */,
+				CF3EE7301F26653E002A910E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3EE7311F26653E002A910E /* Build configuration list for PBXNativeTarget "MindValleyTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3EE7321F26653E002A910E /* Debug */,
+				CF3EE7331F26653E002A910E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3EE7341F26653E002A910E /* Build configuration list for PBXNativeTarget "MindValleyTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3EE7351F26653E002A910E /* Debug */,
+				CF3EE7361F26653E002A910E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF3EE6F91F26653E002A910E /* Project object */;
+}

@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF72DC231F28035A00728683 /* FileFetcherConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CF72DC1A1F28035A00728683 /* FileFetcherConfig.h */; };
+		CF72DC241F28035A00728683 /* FileCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CF72DC1C1F28035A00728683 /* FileCache.h */; };
+		CF72DC251F28035A00728683 /* FileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CF72DC1D1F28035A00728683 /* FileCache.m */; };
+		CF72DC261F28035A00728683 /* FileFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CF72DC1E1F28035A00728683 /* FileFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF72DC271F28035A00728683 /* FileFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CF72DC1F1F28035A00728683 /* FileFetcher.m */; };
+		CF72DC281F28035A00728683 /* FileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CF72DC211F28035A00728683 /* FileInfo.h */; };
+		CF72DC291F28035A00728683 /* FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF72DC221F28035A00728683 /* FileInfo.m */; };
+		CF95412A1F27FEAD0006064D /* ZIAsyncFileFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF9541271F27FEAD0006064D /* ZIAsyncFileFetcher.h */; };
+		CF9541321F27FEFB0006064D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9541311F27FEFB0006064D /* UIKit.framework */; };
+		CF9541341F27FF110006064D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9541331F27FF110006064D /* Foundation.framework */; };
+		CF9541361F2800100006064D /* ZIAsyncFileFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9541271F27FEAD0006064D /* ZIAsyncFileFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF9541221F27FEAD0006064D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CF95412A1F27FEAD0006064D /* ZIAsyncFileFetcher.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF72DC1A1F28035A00728683 /* FileFetcherConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFetcherConfig.h; sourceTree = "<group>"; };
+		CF72DC1C1F28035A00728683 /* FileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCache.h; sourceTree = "<group>"; };
+		CF72DC1D1F28035A00728683 /* FileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCache.m; sourceTree = "<group>"; };
+		CF72DC1E1F28035A00728683 /* FileFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFetcher.h; sourceTree = "<group>"; };
+		CF72DC1F1F28035A00728683 /* FileFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileFetcher.m; sourceTree = "<group>"; };
+		CF72DC211F28035A00728683 /* FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfo.h; sourceTree = "<group>"; };
+		CF72DC221F28035A00728683 /* FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfo.m; sourceTree = "<group>"; };
+		CF9541241F27FEAD0006064D /* libZIAsyncFileFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZIAsyncFileFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9541271F27FEAD0006064D /* ZIAsyncFileFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIAsyncFileFetcher.h; sourceTree = "<group>"; };
+		CF9541311F27FEFB0006064D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF9541331F27FF110006064D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF9541211F27FEAD0006064D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9541341F27FF110006064D /* Foundation.framework in Frameworks */,
+				CF9541321F27FEFB0006064D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF72DC181F28035A00728683 /* AsyncFileFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				CF72DC191F28035A00728683 /* Config */,
+				CF72DC1B1F28035A00728683 /* FileCache */,
+				CF72DC1E1F28035A00728683 /* FileFetcher.h */,
+				CF72DC1F1F28035A00728683 /* FileFetcher.m */,
+				CF72DC201F28035A00728683 /* FileInfo */,
+			);
+			path = AsyncFileFetcher;
+			sourceTree = "<group>";
+		};
+		CF72DC191F28035A00728683 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CF72DC1A1F28035A00728683 /* FileFetcherConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CF72DC1B1F28035A00728683 /* FileCache */ = {
+			isa = PBXGroup;
+			children = (
+				CF72DC1C1F28035A00728683 /* FileCache.h */,
+				CF72DC1D1F28035A00728683 /* FileCache.m */,
+			);
+			path = FileCache;
+			sourceTree = "<group>";
+		};
+		CF72DC201F28035A00728683 /* FileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CF72DC211F28035A00728683 /* FileInfo.h */,
+				CF72DC221F28035A00728683 /* FileInfo.m */,
+			);
+			path = FileInfo;
+			sourceTree = "<group>";
+		};
+		CF95411B1F27FEAD0006064D = {
+			isa = PBXGroup;
+			children = (
+				CF9541261F27FEAD0006064D /* ZIAsyncFileFetcher */,
+				CF9541251F27FEAD0006064D /* Products */,
+				CF9541301F27FEFA0006064D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF9541251F27FEAD0006064D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF9541241F27FEAD0006064D /* libZIAsyncFileFetcher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF9541261F27FEAD0006064D /* ZIAsyncFileFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				CF9541271F27FEAD0006064D /* ZIAsyncFileFetcher.h */,
+				CF72DC181F28035A00728683 /* AsyncFileFetcher */,
+			);
+			path = ZIAsyncFileFetcher;
+			sourceTree = "<group>";
+		};
+		CF9541301F27FEFA0006064D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF9541331F27FF110006064D /* Foundation.framework */,
+				CF9541311F27FEFB0006064D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF9541351F27FFCD0006064D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF72DC281F28035A00728683 /* FileInfo.h in Headers */,
+				CF72DC261F28035A00728683 /* FileFetcher.h in Headers */,
+				CF72DC241F28035A00728683 /* FileCache.h in Headers */,
+				CF72DC231F28035A00728683 /* FileFetcherConfig.h in Headers */,
+				CF9541361F2800100006064D /* ZIAsyncFileFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF9541231F27FEAD0006064D /* ZIAsyncFileFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF95412D1F27FEAD0006064D /* Build configuration list for PBXNativeTarget "ZIAsyncFileFetcher" */;
+			buildPhases = (
+				CF9541201F27FEAD0006064D /* Sources */,
+				CF9541211F27FEAD0006064D /* Frameworks */,
+				CF9541221F27FEAD0006064D /* CopyFiles */,
+				CF9541351F27FFCD0006064D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZIAsyncFileFetcher;
+			productName = ZIAsyncFileFetcher;
+			productReference = CF9541241F27FEAD0006064D /* libZIAsyncFileFetcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF95411C1F27FEAD0006064D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ZI";
+				TargetAttributes = {
+					CF9541231F27FEAD0006064D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF95411F1F27FEAD0006064D /* Build configuration list for PBXProject "ZIAsyncFileFetcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF95411B1F27FEAD0006064D;
+			productRefGroup = CF9541251F27FEAD0006064D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF9541231F27FEAD0006064D /* ZIAsyncFileFetcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF9541201F27FEAD0006064D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF72DC291F28035A00728683 /* FileInfo.m in Sources */,
+				CF72DC251F28035A00728683 /* FileCache.m in Sources */,
+				CF72DC271F28035A00728683 /* FileFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF95412B1F27FEAD0006064D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF95412C1F27FEAD0006064D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF95412E1F27FEAD0006064D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		CF95412F1F27FEAD0006064D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF95411F1F27FEAD0006064D /* Build configuration list for PBXProject "ZIAsyncFileFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF95412B1F27FEAD0006064D /* Debug */,
+				CF95412C1F27FEAD0006064D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF95412D1F27FEAD0006064D /* Build configuration list for PBXNativeTarget "ZIAsyncFileFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF95412E1F27FEAD0006064D /* Debug */,
+				CF95412F1F27FEAD0006064D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF95411C1F27FEAD0006064D /* Project object */;
+}
